@@ -3,6 +3,7 @@ const CLIENT_ID = 'e0OVCfzFT27RI1eD';
 let members = [];
 let initialised = false;
 
+window.onload = () => addMessageToListDOM("Ładowanie systemu...");
 
 const drone = new ScaleDrone(CLIENT_ID, {
     data: {
